@@ -23,7 +23,14 @@ This proof of concept hosts everything using a single docker compose. In my actu
 
 # Usage
 
-TODO
+Setup your Shelly EM to publish to the MQTT broker's address set in the config file `config.ini`.
+
+In absence of a Shelly EM, run the python script `pretend.py` to receive mock data to that same broker instead.
+
+You can verify the output using a tool such as [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer).
+
+![MQTT Explorer output](https://github.com/simonamdev/xemx/blob/main/mqtt.jpg)
+
 
 # FAQ
 
