@@ -1,6 +1,6 @@
 # xemx
 
-A locally hosted electricity consumption and generation monitoring system.
+A proof of concept for a locally hosted electricity consumption and generation monitoring system.
 
 _xemx_ is the maltese word for sun. My original motivation for this project was to be able to track the electrical generation and consumption of my home with minimal hardware required.
 
