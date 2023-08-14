@@ -17,7 +17,7 @@ It uses a [Shelly EM + 2x 50A Clamp](https://www.shelly.com/en/products/shop/she
 
 The Shelly EM is setup to use MQTT pointing to a locally hosted MQTT broker. A microservice written in Go listens to this broker, converting it to Prometheus metrics. Prometheus is then configured to scrape these metrics, which are then queried by Grafana for visualisation.
 
-![Architecture of the system](https://github.com/simonamdev/xemx/blob/main/architecture.png)
+![Architecture of the system](https://github.com/simonamdev/xemx/blob/main/architecture.jpg)
 
 # Usage
 
