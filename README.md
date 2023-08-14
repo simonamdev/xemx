@@ -19,6 +19,8 @@ The Shelly EM is setup to use MQTT pointing to a locally hosted MQTT broker. A m
 
 ![Architecture of the system](https://github.com/simonamdev/xemx/blob/main/architecture.jpg)
 
+This proof of concept hosts everything using a single docker compose. In my actual home I host it in a local Kubernetes cluster.
+
 # Usage
 
 TODO
