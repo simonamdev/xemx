@@ -22,7 +22,7 @@ The Shelly EM is setup to use MQTT pointing to a locally hosted MQTT broker. A m
 
 ![Architecture of the system](https://github.com/simonamdev/xemx/blob/main/architecture.jpg)
 
-This proof of concept hosts everything using a single docker compose. In my actual home I host it in a local Kubernetes cluster.
+This proof of concept hosts everything using a single docker compose. In my actual homelab I host it in a local Kubernetes cluster.
 
 # Usage
 
@@ -47,7 +47,11 @@ Here is a screenshot from my internal dashboard (similar to the one in this repo
 
 # FAQ
 
-TODO
+* _This code is terrible! Why would you use global variables?_: Global variables are stupid until they work then they're not stupid. In my limited spare time to put something out there, I chose done over perfect. The scope of the code is also very small and inconsequential, I don't condone the use of global variables and wanton duplication of code so easily in my professional work.
+
+* _Why introduce Prometheus when Grafana can read MQTT directly with a plugin?_: This allows me to plug in other devices such as other Shelly EMs or Plus Plugs in the future very easily. I also already had a Prometheus + Grafana setup in my homelab so I leveraged it to get to a working solution quicker.
+
+* _Are you being paid by Shelly?_: Not at all, I'm just a happy customer 🙂.
 
 # Licence
 
