@@ -27,6 +27,8 @@ Setup your Shelly EM to publish to the MQTT broker's address set in the config f
 
 In absence of a Shelly EM, run the python script `pretend.py` to receive mock data to that same broker instead.
 
+Run the entire stack using `docker-compose up`.
+
 You can verify the output using a tool such as [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer).
 
 ![MQTT Explorer output](https://github.com/simonamdev/xemx/blob/main/mqtt.jpg)
