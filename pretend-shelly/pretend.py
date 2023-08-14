@@ -3,7 +3,7 @@ import paho.mqtt.client as mqtt
 import configparser
 
 config = configparser.ConfigParser()
-config.read('../config.ini')
+config.read('../mqtt-to-prom/config.ini')
 
 mqtt_server_address = config.get('MQTT', 'server_address')
 mqtt_topic = config.get('MQTT', 'topic')

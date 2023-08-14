@@ -1,6 +1,13 @@
 version: "3"
 
 services:
+  mqtt-to-prom:
+    image: mqtt-to-prom
+    ports:
+      - 1323:1323
+    restart: always
+    depends_on:
+      - mosquitto
   mosquitto:
     image: eclipse-mosquitto
     volumes:
