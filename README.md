@@ -29,10 +29,13 @@ In absence of a Shelly EM, run the python script `pretend.py` to receive mock da
 
 Run the entire stack using `docker-compose up`.
 
-You can verify the output using a tool such as [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer).
+MQTT output can be verified using a tool such as [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer).
 
 ![MQTT Explorer output](https://github.com/simonamdev/xemx/blob/main/mqtt.jpg)
 
+Prometheus output can be verified by visting `127.0.0.1:9090` and running a query for `shelly_em`:
+
+![Prometheus output](https://github.com/simonamdev/xemx/blob/main/prom.jpg)
 
 # FAQ
 

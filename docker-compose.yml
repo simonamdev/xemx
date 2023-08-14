@@ -5,7 +5,7 @@ services:
     image: mqtt-to-prom
     ports:
       - 1323:1323
-    restart: always
+    restart: unless-stopped
     depends_on:
       - mosquitto
   mosquitto:
@@ -15,4 +15,18 @@ services:
     ports:
       - 1883:1883
       - 9001:9001
-    restart: always
+    restart: unless-stopped
+  prometheus:
+    image: prom/prometheus:latest
+    restart: unless-stopped
+    volumes:
+      - ./prometheus/config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    ports:
+      - 9090:9090
+
+volumes:
+  prometheus_data: {}
