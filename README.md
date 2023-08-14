@@ -30,7 +30,7 @@ Setup your Shelly EM to publish to the MQTT broker's address set in the config f
 
 In absence of a Shelly EM, run the python script `pretend.py` to receive mock data to that same broker instead.
 
-Run the entire stack using `docker-compose up`.
+Make sure you build the `mqtt-to-prom` service by running `build.sh`. Run the entire stack using `docker-compose up`.
 
 MQTT output can be verified using a tool such as [MQTT Explorer](https://github.com/thomasnordquist/MQTT-Explorer).
 
