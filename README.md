@@ -1,11 +1,14 @@
 # xemx
-An electricity consumption and generation monitoring system
+
+A locally hosted electricity consumption and generation monitoring system.
 
 _xemx_ is the maltese word for sun. My original motivation for this project was to be able to track the electrical generation and consumption of my home with minimal hardware required.
 
 # Rationale
 
-TODO
+[Half of Malta's subsidy spend is on energy](https://www.maltatoday.com.mt/news/national/123554/energy_support_equal_to_half_of_maltas_subsidy_spenda). This meant that, while prices did not increase despite everything happening in the world, the deficit has ballooned to the point that the EU Commission has [recommended using it on that instead](https://timesofmalta.com/articles/view/european-council-tells-malta-wind-energy-support-measures.1033652).
+
+Watching these events unfold and realising the only observability I had on my consumption was my tri-monthly bill, I decided to apply my skills in being more pro-active, giving myself a solid foundation off of which to build electricity bill estimation and tracking the return of investment I made in solar power.
 
 # Setup
 
@@ -36,6 +39,11 @@ MQTT output can be verified using a tool such as [MQTT Explorer](https://github.
 Prometheus output can be verified by visting `127.0.0.1:9090` and running a query for `shelly_em`:
 
 ![Prometheus output](https://github.com/simonamdev/xemx/blob/main/prom.jpg)
+
+Grafana can be accessed at `127.0.0.1:3000`. The username and password are `admin/admin`. You can see a working dashboard on the `Xemx` dashboard.
+Here is a screenshot from my internal dashboard (similar to the one in this repo but with real values):
+
+![Grafana Dashboard](https://github.com/simonamdev/xemx/blob/main/dash.jpg)
 
 # FAQ
 
