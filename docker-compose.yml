@@ -4,7 +4,7 @@ services:
   mosquitto:
     image: eclipse-mosquitto
     volumes:
-      - ./:/mosquitto/:rw
+      - ./mqtt/:/mosquitto/:rw
     ports:
       - 1883:1883
       - 9001:9001
